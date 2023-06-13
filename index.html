@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>Taller de geolocalizacion</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        #map{
+            height: 400px;
+        }
+        .full-screen{
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            text-align: center;
+            background-color: rgba(250,250,250,0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="full-screen" id="travel-screen">
+        <h1>Espera un momento  estamos obteniendo tu localizacion y cargando el mapa</h1>
+        <p>Es probable que tengas que dar permiso al navegador en la parte superior</p>
+        <p>Cuentanos de tu medio de transporte:</p>
+        <select id="travel-mode">
+            <option value="0">Elegir modo</option>
+            <option value="DRIVING">Automovil</option>
+            <option value="BICYCLING">Bicicleta</option>
+            <option value="WALKING">Caminando</option>
+        </select>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <input type="text" class="form-control" id="search-place" placeholder="Buscar lugar">
+                <div id="map"></div>
+            </div>
+            <div class="col-md-4">
+                <div id="info"></div>
+            </div>
+        </div>
+    </div>
+    <!--LA LLAVE PARA IMPORTAR LA API DE MAPS-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk9l6-Pa6iZzXhfOqUiH2Wm0StZWlgJpE&libraries=places"></script>
+    <script src="js/user_location.js"></script>
+    <script src="js/mainA.js"></script>
+</body>
+</html>
