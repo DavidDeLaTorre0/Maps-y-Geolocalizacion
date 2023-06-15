@@ -1,5 +1,5 @@
 # Maps-y-Geolocalizacion
-App para buscar/preparar ruta ( origen y destino ), recogiendo datos de la API de Google Maps. Buen viaje!!
+App para buscar ruta en Google Maps, recogiendo datos de su API.
 
 # Antes de comenzar
 Deberás tener una cuenta en Google Cloud. Dentro de esta plataforma crearás un proyecto para posteriormente crear una clave privada, esta llave sirve para autenticar solicitudes asociadas a tu proyecto, ya sea en local o en la nube.
